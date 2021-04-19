@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -17,7 +18,7 @@
 
     <h1>Weapon Shop</h1>
     <h2>Item's name</h2>
-    <p id="item_name">小説A</p>
+    <p id="item_name">Gun</p>
 
     <h2>価格</h2>
     <p id="price">1500</p>
@@ -30,8 +31,12 @@
         <button onclick="buy()">買う</button>
     </p>
     
-    <input type="submit" value="">
-    <button id="buyBtn" class="btn btn-danger">Input</button>
+    <h2>タイマー</h2>
+    <button id="timer" onclick = "startTimer()">Start</button>
+    <button id="stop" onclick = "stopTimer()">Stop</button>
+    <div id="count">0</div>
+
+    <div id="box" style="width:50px;height:50px;background-color;red;"></div>
     <script src="js/event.js"></script>
 
 </body>
