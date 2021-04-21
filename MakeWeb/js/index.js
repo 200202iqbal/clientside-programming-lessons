@@ -16,3 +16,30 @@ function inputCharacterName()
     }
     
 }
+
+var person = {
+    firstName : "John", 
+    lastName : "Doe",
+    age : 50, 
+    eyeColor : "blue",
+    fullname : function(){
+        return this.firstName + " " + this.lastName;
+    }
+    };
+console.log(person.fullname);
+
+var fruits,flen,i;
+fruits = [
+    "Banana",
+    "Orange",
+    "Apple",
+    "Manggo"
+];
+flen = fruits.length;
+var text = "";
+for ( i = 0; i< fruits.length; i++)
+{
+    text += fruits[i] + "<br>";
+    
+}
+var loopElement = document.getElementById("demo").innerHTML = text;
