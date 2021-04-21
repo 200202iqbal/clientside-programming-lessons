@@ -22,6 +22,22 @@ console.log(index)
  * 
  */
 var date = new Date();
-var today = date.getDay();
-var dateElement = document.getElementById("today");
-dateElement.innerHTML = today;
+var dateElement = document.getElementById("date");
+dateElement.innerHTML = date;
+var itemlist = [];
+
+
+function registItem()
+{
+    var itemValue = document.getElementById("item_name");
+    var item = itemValue.value;
+    itemlist.push(item);
+    console.log(itemlist);
+}
+
+function show()
+{
+    var showdataElement = document.getElementById("showdata").innerHTML = itemlist;
+}
+
+

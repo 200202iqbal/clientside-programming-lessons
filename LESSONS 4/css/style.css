@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #message
 {
     border-radius : 10px;
@@ -43,42 +42,3 @@ input[type=number]
     font-size: 5rem;
 }
 
-=======
-#message {
-    border-radius: 10px;
-    padding: 20px;
-    border: 2px solid darkcyan;
-}
-
-button {
-    border-radius: 5px;
-    padding: 5px 20px;
-    border: none;
-    background-color:darkcyan;
-    color: white;
-}
-
-h2 {
-    padding: 10px;
-    font-size: 16px;
-    background-color: darkcyan;
-    color: white;
-}
-
-h3 {
-    font-size: 14px;
-    padding: 5px;
-    border-bottom: 1px solid darkcyan;
-}
-
-input[type=number] {
-    border-radius: 3px;
-    padding: 5px;
-    border: 1px solid darkcyan;
-}
-
-#count {
-    padding: 10rem;
-    font-size: 5rem;
-}
->>>>>>> 3575d028eaf3cc8f6b14f2f269d52a6b3f5b467f
