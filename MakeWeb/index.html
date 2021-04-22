@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeWeb | 200202 </title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <div id="menubar">
+        <ul>
+            <li><a href=""> Home </a></li>
+            <li><a href=""> PokeDex </a> </li>
+            <li><a href=""> Profile </a></li>
+        </ul>
+    </div>
+    
+    <div class="row">
+        <div class="column side">
+            <h2 class ="borderTitle">Side</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+
+        <div class ="column middle">
+            <h2 class ="borderTitle">Middle</h2>
+            <p>Main Content</p>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Maecenas sit amet pretium urna. 
+                Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. 
+                Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. 
+                Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+
+        <div class ="column side">
+            <h2 class="borderTitle">Side</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+    </div>
+
+
+    <h1>
+        Character's name :
+    </h1>
+    <input id="character_name" type="text" onchange="inputCharacterName()">
+    <p id = "message"> </p>
+
+
+    <div id="box_character">
+        <h1>
+            Character's select :
+        </h1>
+        <li class="character_list"> 
+            <figure>
+                <img src="img/001.png" alt="Bulbasaurus" srcset="" style="width:30%">
+                <figcaption>Bulbasaurus</figcaption>
+            </figure>
+        </li>
+    </div>
+
+    <script src="js/index.js"></script>    
+</body>
+</html>

@@ -1,37 +1,44 @@
-#message {
-    border-radius: 10px;
-    padding: 20px;
-    border: 2px solid darkcyan;
+#message
+{
+    border-radius : 10px;
+    padding : 20px;
+    border: 2px solid darkorange;
 }
 
-button {
-    border-radius: 5px;
+button
+{
+    border-radius: 2px;
     padding: 5px 20px;
-    border: none;
-    background-color:darkcyan;
-    color: white;
+    border : none;
+    background-color:coral;
+    color:white;
 }
 
-h2 {
+h1
+{
     padding: 10px;
-    font-size: 16px;
-    background-color: darkcyan;
-    color: white;
+    font-size:16px;
+    background-color:darkred;
+    color:white;
 }
 
-h3 {
-    font-size: 14px;
-    padding: 5px;
-    border-bottom: 1px solid darkcyan;
+h2
+{
+    font-size:14px;
+    padding:5px;
+    border-bottom: 1px solid darkred;
 }
 
-input[type=number] {
+input[type=number]
+{
     border-radius: 3px;
-    padding: 5px;
-    border: 1px solid darkcyan;
+    padding:5px;
+    border: 1px solid darkred
 }
 
-#count {
+#count
+{
     padding: 10rem;
     font-size: 5rem;
 }
+
