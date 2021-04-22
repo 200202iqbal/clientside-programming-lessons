@@ -1,0 +1,62 @@
+#inputColumn
+{
+    padding: 5px;
+    color: white;
+    
+    background-color:#7cc7fb;
+}
+
+#resultColumn
+{
+    padding: 3px;
+    color: white;
+    
+    background-color:#659EC7;
+}
+
+#todayID
+{
+    font-size: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    
+    background-color:#65c79e;
+}
+#todayGomiID
+{
+    font-size: 50px;
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+    
+    background-color:#3de7bc;
+}
+
+#todayDateID
+{
+    font-size: 50px;
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+    
+    background-color:#0c77f1;
+}
+
+.digitalclockClass
+{
+    float:left;
+}
+#hoursblock,#minuteblock,#secondsblock
+{
+    float:left;
+    width: 70px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+#testClock
+{
+   font-size: 60px;
+}
