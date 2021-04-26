@@ -21,9 +21,12 @@ console.log(index)
  * 
  * 
  */
+var weekdays = ["日","月","火","水","木","金","土"];
 var date = new Date();
 var dateElement = document.getElementById("date");
 dateElement.innerHTML = date;
+
+
 var itemlist = [];
 
 
@@ -37,7 +40,34 @@ function registItem()
 
 function show()
 {
-    var showdataElement = document.getElementById("showdata").innerHTML = itemlist;
+    var showdataElement = document.getElementById("showdata");
+    var text = "";
+    for ( i = 0; i < itemlist.length ; i++)
+    {
+        text += i + ". " + itemlist[i] + "<br>";
+    }
+    showdataElement.innerHTML = text;
+
+    var itemListElement = document.getElementById("itemList");
+    var itemListElement1 = document.createElement("p");
+    for ( i = 0; i < itemlist.length ; i++)
+    {
+        itemListElement1.innerHTML += i + ". " + itemlist[i] +"<br>";
+    }
+    itemListElement.appendChild(itemListElement1); 
 }
+function resetItems()
+{
+    itemlist = []
+}
+
+function deleteItems()
+{
+    var deleteOrderElement = document.getElementById("deleteOrder").value ;
+    itemlist.splice(deleteOrderElement, 1);
+    console.log("Number of array : ",deleteOrderElement);
+    console.log(itemlist);
+}
+
 
 

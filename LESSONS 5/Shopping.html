@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    
+</head>
+<body>
+        <h1> ABC店</h1>
+        <hr>
+        <div>
+            <h2>今日の日付</h2>
+            <p id="date"></p>
+        </div>
+        
+        <div>
+            <h2>商品入力</h2>
+            <input type="text" id="item_name">  
+            <button id="regist" onclick="registItem()">登録</button>
+            <button id="show" onclick="show()">Show Array List</button>
+            <button id="reset" onclick="resetItems()"> Reset </button>
+        </div>
+
+        <div >
+            <table>
+                <tr id ="itemList">
+                </tr>
+            </table>
+        </div>
+        <script src="js/Shoppingjs.js"></script>
+</body>
+</html>

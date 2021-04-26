@@ -10,13 +10,24 @@
 <body>
         <h2>今日の日付</h2>
         <p id="date"></p>
+        <p id="days"></p>
         <h2>商品入力</h2>
         <input type="text" id="item_name">
         <p>
             <button id="regist" onclick="registItem()">登録</button>
             <button id="show" onclick="show()">Show Array List</button>
+            <button id="reset" onclick="resetItems()"> Reset </button>
+            <p id="showdata"></p>
+            <br>
+            <div id ="itemList"></div>
         </p>
-        <p id="showdata"></p>
+        <h2>要素を削除する</h2>
+        <h3>何番目 ? </h3>
+        <p>
+            <input type="number" id ="deleteOrder">
+            <button id="delete" onclick="deleteItems()">del</button>
+        </p>
+        
 
 
 
