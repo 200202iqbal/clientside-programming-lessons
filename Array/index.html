@@ -75,8 +75,28 @@
 
         <div id="userbuttonOption">
             <button id="userAdd" onclick="userAdd()"> 登録</button>
-           
-    </div>
+            <button id="userShow" onclick="userShow()">提示</button>   
+        </div>
+        <table id="userStatus">
+            <tr>
+                <th colspan="2">User Status !</th>
+            </tr>
+            <tr>
+                <td >User Name :</td>
+                <td><span id="showUserName"></span></td>
+            </tr>
+            <tr>
+                <td>User Email :</td>
+                <td id="showUserEmail"></td>
+            </tr>
+            <tr>
+                <td>Password  :</td>
+                <td id="showUserPassword"></td>
+            </tr>
+        
+        </table>
+
+
 
     <script src="js/array.js"></script>
 </body>

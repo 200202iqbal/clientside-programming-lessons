@@ -61,10 +61,10 @@ console.log("Weapon : ",character.weapon);
 //
 //
 
-var getNameUserElement = document.getElementById("nameUser").innerText;
+/*var getNameUserElement = document.getElementById("nameUser").innerText;
 var getEmailUserElement = document.getElementById("emailUser").innerText;
 var getPasswordUserElement = document.getElementById("passwordUser").innerText;
-
+*/
 var user =
 {
     Name : "",
@@ -87,6 +87,16 @@ function userAdd()
     user.email = EmailUserElement;
     user.password = PasswordUserElement;
     console.log(user);
+}
+
+function userShow()
+{
+    var showUserNameElement = document.getElementById("showUserName");
+    var showUserEmailElement = document.getElementById("showUserEmail");
+    var showUserPasswordElement = document.getElementById("showUserPassword");
+    showUserNameElement.innerHTML = user.name;
+    console.log(showUserNameElement);
+    
 }
 
 
