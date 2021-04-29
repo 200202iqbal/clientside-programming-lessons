@@ -1,0 +1,43 @@
+#screenGame
+{
+    margin-left: 40%;
+    margin-top: 15%; 
+}
+
+#title
+{
+    background-color: mediumturquoise;
+    padding: 6pt;
+    text-align: center;
+    color:white;
+    font: 20pt Arial;
+    font-style: oblique;
+}
+.boxContainer .box
+{
+    display: inline-block;
+}
+#box-low
+{
+    background-color:#78e08f;
+    border: 0pt;
+    padding: 5pt;
+    border-radius: 5px;
+    color: white;
+}
+#box-draw
+{
+    background-color:#60a3bc;
+    border: 0pt;
+    padding: 5pt;
+    border-radius: 5px;
+    color:white
+}
+#box-high
+{
+    background-color: #38ada9;
+    border: 0pt;
+    padding: 5pt;
+    border-radius: 5px;
+    color:white;
+}
