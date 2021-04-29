@@ -37,7 +37,7 @@ var charMP = charMPELement.innerHTML = character.mp;
 function levelup()
 {
     character.exp += 2;
-    character.hp *=1.5;
+    character.hp *=2;
     character.mp += 50;
     character.exp += 100;  
     character.level += 1;
@@ -49,6 +49,8 @@ function showStat()
 {
     charLevel = charLevelElement.innerHTML = character.level;
     charEXP = charEXPElement.innerHTML = character.exp;
+    charHP = charHPElement.innerHTML = character.hp;
+    charMP = charMPELement.innerHTML = character.mp;
 }
 
 character.weapon = "スタンガン";
@@ -94,7 +96,9 @@ function userShow()
     var showUserNameElement = document.getElementById("showUserName");
     var showUserEmailElement = document.getElementById("showUserEmail");
     var showUserPasswordElement = document.getElementById("showUserPassword");
-    showUserNameElement.innerHTML = user.name;
+    showUserNameElement.innerHTML = user.Name;
+    showUserEmailElement.innerHTML = user.email;
+    showUserPasswordElement.innerHTML = user.password;
     console.log(showUserNameElement);
     
 }
