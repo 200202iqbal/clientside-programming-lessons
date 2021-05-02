@@ -20,7 +20,8 @@
 #box-low
 {
     background-color:#78e08f;
-    border: 0pt;
+    border-width: 1px;
+    border-color: #78e08f;
     padding: 5pt;
     border-radius: 5px;
     color: white;
@@ -28,7 +29,8 @@
 #box-draw
 {
     background-color:#60a3bc;
-    border: 0pt;
+    border-width: 1px;
+    border-color: #60a3bc;
     padding: 5pt;
     border-radius: 5px;
     color:white
@@ -36,8 +38,39 @@
 #box-high
 {
     background-color: #38ada9;
-    border: 0pt;
+    border-width: 1px;
+    border-color:#38ada9;
     padding: 5pt;
     border-radius: 5px;
     color:white;
+}
+#box-retry
+{
+    background: #ffffff;
+    border-width: 1px;
+    border-color: #38ada9;
+    padding: 4pt;
+    border-radius: 5px;
+    color: #38ada9;
+}
+#box-retry:hover
+{
+    background-color:aliceblue;
+}
+p
+{
+    font-family: Arial;
+}
+#number
+{
+    font-size: 25pt;
+}
+#scores
+{
+    font-size: 10pt;
+}
+#resultText
+{
+    font-size:30pt;
+    margin-top: 15pt;
 }
