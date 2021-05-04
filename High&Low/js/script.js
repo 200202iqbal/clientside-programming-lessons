@@ -19,20 +19,22 @@
     var resultTextElement = document.getElementById("resultText");
     var scoreValueElement = document.getElementById("scoresValue");
     var scoreValue = 0;
-
+    var flag = 0;
+    var setValue = sessionStorage.setItem("scoreCount", scoreValue);
+    var getValue = sessionStorage.getItem("scoreCount");
 
     
 //buttonの関数
 function low()
 {
+
     if( userRandomNumber < numberRandom)
     {
         scoreValue++;
         resultTextElement.innerHTML = "Win !!";
         scoreValueElement.innerHTML = scoreValue;
-        buttonHidden();
-        
-
+        var setValue = sessionStorage.setItem("scoreCount", scoreValue);;
+        randomNumber();
     }
     else
     {
@@ -44,13 +46,14 @@ function low()
 
 function draw()
 {
+    
     if( userRandomNumber == numberRandom)
     {
         scoreValue++;
         resultTextElement.innerHTML = "Win !!";
         scoreValueElement.innerHTML = scoreValue;
-        buttonHidden();
-        
+        var setValue = sessionStorage.setItem("scoreCount", scoreValue);
+        randomNumber();
     }
     else
     {
@@ -62,31 +65,22 @@ function draw()
 
 function high()
 {
+    
     if( userRandomNumber > numberRandom)
     {
         scoreValue++;
         resultTextElement.innerHTML = "Win !!";
         scoreValueElement.innerHTML = scoreValue;
-        buttonHidden();
+        var setValue = sessionStorage.setItem("scoreCount", scoreValue);
+        randomNumber();
     }
     else
     {
         resultTextElement.innerHTML = "Lose !!";
         buttonHidden();
-        
         sessionStorage.clear();
-
     }
 }
-/*//browser Random number
-var numberValueElement = document.getElementById("number");
-var numberRandom = Math.floor(Math.random()*13);
-numberValueElement.innerHTML = numberRandom;
-
-//user Random number
-var userRandomNumber = Math.floor(Math.random()*13); */
-
-
 
 function buttonHidden()
 {
@@ -98,12 +92,38 @@ function buttonHidden()
 
 function retry()
 {
-    console.log("retry");
-    // Store
-    sessionStorage.setItem("scoreCount", scoreValue++);
     document.location.reload();
 }
-    
-    
-    // Retrieve
-    scoreValueElement.innerHTML = sessionStorage.getItem("scoreCount");
+// Retrieve
+scoreValueElement.innerHTML = sessionStorage.getItem("scoreCount");
+
+function scoreFlag(flag)
+{
+    if (flag == 1)
+    {
+        scoreValue++;   
+    }else
+    {
+        scoreValue = 0;
+    }
+    return scoreValue;
+}
+function showscore()
+{
+    var score = sessionStorage.getItem("scoreCount");
+    console.log(score);
+}
+function randomNumber()
+{
+    //browser Random number
+    var numberValueElement = document.getElementById("number");
+    var numberRandom = Math.floor(Math.random()*13);
+    numberValueElement.innerHTML = numberRandom;
+      
+    //user Random number
+    var userRandomNumber = Math.floor(Math.random()*13); 
+    console.log("number random ", numberRandom);
+    console.log("user random ", userRandomNumber);
+}
+
+
