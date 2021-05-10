@@ -1,0 +1,133 @@
+h1
+{
+    margin-left: 8%;
+}
+span
+{
+    background: black;
+    color: white;
+    padding: 3pt;
+    border-radius: 7pt;
+}
+.box1
+{
+    cursor:alias;
+    color: white;
+    background-color: #f6b93b;
+    
+}
+
+.box2
+{
+    cursor:all-scroll;
+    color: white;
+    background: #fa983a;
+}
+.box3
+{
+    cursor:auto;
+    color: white;
+    background: #e55039;
+}
+.box4
+{
+    cursor: cell;
+    color: white;
+    background: #4a69bd;
+}
+.box5
+{
+    cursor:context-menu;
+    color: white;
+    background: #1e3799;
+}
+.box6
+{
+    cursor: col-resize;
+    color: white;
+    background: #e58e26;
+}
+.box7
+{
+    cursor:copy;
+    color: white;
+    background: #b71540;
+}
+.box8
+{
+    cursor:crosshair;
+    color: white;
+    background:#0c2461 ;
+}
+.box9
+{
+    cursor: default;
+    color: white;
+    background: #0a3d62;
+}
+.box10
+{
+    cursor:e-resize;
+    color: white;
+    background: #079992;
+}
+.box11
+{
+    cursor: ew-resize;
+    color: white;
+    background: #40407a;
+}
+.box12
+{
+    cursor:grab;
+    color: white;
+    background: #706fd3;
+}
+.box13
+{
+    cursor:grabbing;
+    color: white;
+    background:#474787 ;
+}
+.box14
+{
+    cursor: help;
+    color: white;
+    background: #227093;
+}
+.box15
+{
+    cursor:move;
+    color: white;
+    background: #34ace0;
+}
+.box16
+{
+    cursor: n-resize;
+    color: white;
+    background: #a55eea;
+}
+.box17
+{
+    cursor:ne-resize;
+    color: white;
+    background: #45aaf2;
+}
+.box18
+{
+    cursor:not-allowed;
+    color: white;
+    background:#3867d6 ;
+}
+.box19
+{
+    cursor: ns-resize;
+    color: white;
+    background: #a5b1c2;
+}
+.box20
+{
+    cursor:nw-resize;
+    color: white;
+    background: #4b6584;
+}

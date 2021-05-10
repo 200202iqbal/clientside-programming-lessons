@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High and Low ゲーム</title>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
-    <div id="screenGame">
+    <div class="screenGame">
         <span id="title"> High & Low Game </span>
+        <p id="scores">Scores : <span id="scoresValue"></span></p>
         <p id="number"></p>
-        <p> High か Low　か ?</p>
+        <p id="text"> High か Low　か ?</p>
         <div class = "boxContainer">
             <div class = "box"><button id = "box-low" onclick="low()"> Low </button></div>
             <div class = "box"><button id = "box-draw" onclick="draw()"> Draw </button></div>
             <div class = "box"><button id = "box-high" onclick="high()"> High </button></div>
+            <div class = "box"><button id = "box-retry" onclick="retry()"> もう一度 </button></div>
         </div>
+        <p id="resultText"></p>
     </div>
+    <button onclick="showscore()">show score</button>
     <script src="js/script.js"></script>
 </body>
 </html>

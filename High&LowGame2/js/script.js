@@ -1,4 +1,4 @@
-    //browser Random number
+   //browser Random number
     var numberValueElement = document.getElementById("number");
     var numberRandom = Math.floor(Math.random()*13);
     numberValueElement.innerHTML = numberRandom;
@@ -6,14 +6,16 @@
     //user Random number
     var userRandomNumber = Math.floor(Math.random()*13); 
     console.log(numberRandom);
-    console.log(userRandomNumber);
+    console.log(userRandomNumber); 
     
     //Button を宣言する
     var boxLow = document.getElementById("box-low");
     var boxDraw = document.getElementById("box-draw");
     var boxHigh = document.getElementById("box-high");
-    var buttonRetry = document.getElementById("box-retry")    
+    var buttonRetry = document.getElementById("box-retry");  
+    var buttonNextGame = document.getElementById("box-next");
     buttonRetry.hidden = true;
+    buttonNextGame.hidden = true;
     //
 
     var resultTextElement = document.getElementById("resultText");
@@ -34,7 +36,7 @@ function low()
         resultTextElement.innerHTML = "Win !!";
         scoreValueElement.innerHTML = scoreValue;
         var setValue = sessionStorage.setItem("scoreCount", scoreValue);;
-        randomNumber();
+        buttonNext();
     }
     else
     {
@@ -53,7 +55,7 @@ function draw()
         resultTextElement.innerHTML = "Win !!";
         scoreValueElement.innerHTML = scoreValue;
         var setValue = sessionStorage.setItem("scoreCount", scoreValue);
-        randomNumber();
+        buttonNext();
     }
     else
     {
@@ -72,7 +74,8 @@ function high()
         resultTextElement.innerHTML = "Win !!";
         scoreValueElement.innerHTML = scoreValue;
         var setValue = sessionStorage.setItem("scoreCount", scoreValue);
-        randomNumber();
+        buttonNext();
+        
     }
     else
     {
@@ -90,6 +93,23 @@ function buttonHidden()
     buttonRetry.hidden = false;
 }
 
+function buttonNext()
+{
+    boxLow.hidden = true;
+    boxDraw.hidden = true; 
+    boxHigh.hidden = true;
+    buttonRetry.hidden = true;
+    buttonNextGame.hidden = false;
+    
+}
+function next()
+{
+    boxLow.hidden = false;
+    boxDraw.hidden = false; 
+    boxHigh.hidden = false;
+    buttonNextGame.hidden = true;
+    randomNumber();
+}
 function retry()
 {
     document.location.reload();
@@ -116,12 +136,12 @@ function showscore()
 function randomNumber()
 {
     //browser Random number
-    var numberValueElement = document.getElementById("number");
-    var numberRandom = Math.floor(Math.random()*13);
+    numberValueElement = document.getElementById("number");
+    numberRandom = Math.floor(Math.random()*13);
     numberValueElement.innerHTML = numberRandom;
       
     //user Random number
-    var userRandomNumber = Math.floor(Math.random()*13); 
+    userRandomNumber = Math.floor(Math.random()*13); 
     console.log("number random ", numberRandom);
     console.log("user random ", userRandomNumber);
 }
