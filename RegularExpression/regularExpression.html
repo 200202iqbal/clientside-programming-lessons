@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reqular Expression</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="boxContainer">
+        <h2>Check Aphabet</h2>
+        <h3>氏名</h3>
+        <input type="text" id="userName" required> 
+        <p id="error_aphabet"></p>
+        <h3>フリガナ</h3> 
+        <input type="text" id="furigana" required>
+        <p id="error_furigana"></p>
+        <h3>郵便番号</h3> 
+        <input type="text" id="postNumber" required>
+        <p id="error_furigana"></p>
+        <h3>電話番号</h3> 
+        <input type="text" id="telpNumber" required>
+        <p id="error_furigana"></p>
+
+        <div id="button">
+            <button onclick="regist()">登録</button>
+        </div>
+    </div>
+    <script src="regularExpression.js"></script>
+</body>
+</html>

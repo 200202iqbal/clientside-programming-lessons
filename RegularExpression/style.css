@@ -1,0 +1,25 @@
+#boxContainer
+{
+    width:auto;
+}
+h3,
+input
+{
+    display: inline;
+}
+input{
+    width: 80%;
+
+}
+#userName
+{
+    margin-left :33px;
+}
+#error_user_name
+{
+    color:red;
+}
+button
+{
+    margin-top :10px;
+}
