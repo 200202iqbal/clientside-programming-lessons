@@ -29,6 +29,7 @@ function checkFurigana(value)
 {
     let pattern = /^[\u3040-\u309F]+$/;
     let message = "";
+    let value
     let is_match = value.match(pattern);
     if(!is_match)
     {
