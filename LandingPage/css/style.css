@@ -1,0 +1,31 @@
+#mySidenav a{
+    position: absolute;
+    left: -80px;
+    transition: 0.3s; /* add transition on hover */
+    padding:15px;
+    width: 100px;
+    font-size: 20px;
+    color:white;
+    border-radius: 0 20px 20px 0;
+}
+
+#mySidenav a:hover{
+    left:0; /* on mouse-over, make the elements appear as they should */
+}
+
+/* The about link : 20px from the top with a green background */
+#home
+{
+    top: 50%;
+    background-color: teal;
+}
+#about
+{
+    top:55%;
+    background-color: teal;
+}
+#project
+{
+    top: 60%;
+    background-color: teal;
+}

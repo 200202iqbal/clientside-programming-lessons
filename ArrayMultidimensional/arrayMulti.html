@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Multidimensional</title>
+    <script src="js/arrayMutli.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- array and matriks multidimensional : 多次元配列と行列-->
+    <div class="tableBox">        
+        <table>
+            <th>
+                <td class="tableHeader">id</td>
+                <td class="tableHeader">name</td>
+                <td class="tableHeader">price</td>
+                <td  class="tableHeader">is_sale</td>
+            </th>
+            <tr id="postTableRow">
+
+            </tr>
+            <p id="test"></p>
+        </table>
+    </div>
+
+        <div class="inputBox">
+            <label for="Id">Id : </label>
+            <input type="text" id="item_id">
+            <label for="Name">Name : </label>
+            <input type="text" id="item_name">
+            <label for="Price">Price : </label>
+            <input type="number" id="item_price">
+            <label for="Is_sale">Is_sale : </label>
+            <select name="is_sale" id="Is_sale">
+                <option value="True">True</option>
+                <option value="False">False</option>
+            </select>
+            <button id="Submit" onclick="regist()"> 登録 </button>
+
+        </div>
+</body>
+</html>
