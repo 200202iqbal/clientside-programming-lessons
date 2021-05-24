@@ -1,0 +1,17 @@
+body
+{
+    margin-top: 100px;
+}
+.btn-outline-primary{
+    margin-right: 5px;
+}
+hr
+{
+    width: 95%;
+    border:2px solid black;
+}
+h1
+{
+    
+    text-align:center;
+}

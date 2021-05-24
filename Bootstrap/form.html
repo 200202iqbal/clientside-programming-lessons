@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Student YSE</h1>
+        <hr>
+        <form action="">
+            <!-- for email adrress -->
+            <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email"class="form-control" id="inputEmail"
+                placeholder="name@example.com" required>
+            </div>
+            <!-- for year -->
+            <div class="form-group">
+                <label for="yearSelect">Entry Year</label>
+                <select name="year" id="yearSelect" class="form-control">
+                    <option>2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                </select>
+            </div>
+            <!-- for class -->
+            <div class="form-group">
+                <label for="classSelect">Class Group</label>
+                <select name="year" id="classSelect" class="form-control">
+                    <option>Management</option>
+                    <option>IT-Game Software</option>
+                    <option>Robotic</option>
+                    <option>AI Service</option>
+                </select>
+            </div>
+
+            <!-- for hobby -->
+            <div class="form-group">
+                <label for="inputHobby">Hobby</label>
+                <input type="text" class="form-control" id="inputHobby">
+            </div>
+
+            <!-- for gender -->
+            <label for="">Gender</label>
+            <div class="form-check">
+                <input type="radio" id="male" name="gender" class="form-check-input">
+                <label for="male" class="form-check-label">男性</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="female" name="gender" class="form-check-input">
+                <label for="female" class="form-check-label">女性</label>
+            </div>
+            <br>
+            <!-- for agree  -->
+            <label for="" id="angket">Agree ?</label>
+            <div class="form-check">
+                <input type="checkbox"id="q1_1" class="form-check-input">
+                <label for="q1_1" class="form-check-label">Yes</label>
+            </div>
+
+            <!-- for button -->
+            <div class="btn-group" id="btnRegister">
+                <button class="btn btn-outline-primary">Register</button>
+                <button class="btn btn-outline-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
