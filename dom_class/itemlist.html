@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><input type="checkbox" value="alldrink" name="alldrink" id="alldrink" onclick="allfunction()">ドリンク</h3>
+    <ul class="item_list">
+        <li><input type="checkbox" class="drinks" name="drink" id="milktea">ミネラルウォーター</li>
+        <li><input type="checkbox" class="drinks" name="drink" id="coffee">コーヒー</li>
+        <li><input type="checkbox" class="drinks" name="drink" id="ocha">紅茶</li>
+        <li><input type="checkbox" class="drinks" name="drink" id="houshicha">ほうじ茶</li>
+    </ul>
+    <h3><input type="checkbox" name="allfood" id="allfood">フード</h3>
+    <ul class="item_list">
+        <li><input type="checkbox" name="curry" id="curry">カレー</li>
+        <li><input type="checkbox" name="ramen" id="ramen">ラーメン</li>
+        <li><input type="checkbox" name="yakisoba" id="yakisoba">焼きそば</li>
+        <li><input type="checkbox" name="pasta" id="pasta">パスタ</li>
+    </ul>
+
+    <h3>ログイン</h3>
+    <form action="" method="post" onsubmit="return login()">
+        <h4>Email</h4>
+        <input type="text" name="email">
+        <h4>パスワード</h4>
+        <input type="password" name="password">
+        <div>
+            <button>ログイン</button>
+        </div>
+    </form>
+    <script src="js/dom_class.js"></script>
+</body>
+</html>
