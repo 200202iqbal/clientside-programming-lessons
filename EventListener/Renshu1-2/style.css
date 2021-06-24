@@ -1,0 +1,73 @@
+
+#kosu #buybtn
+{
+    margin:5px 0 5px 0;
+    display:block;
+    background-color: #eb2a2a;
+    box-sizing: border-box;
+    padding:7px 15px 7px 15px;
+    border:0px;
+    color:white;
+    border-radius: 15px;
+}
+#kosu #buybtn:hover{
+    background-color: #801717;
+}
+#result
+{
+    margin:10px auto 10px auto;
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+}
+#result input{
+    height: 30px;
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.89);
+    border-radius:15px;
+    padding-left:15px;
+    background-color: rgba(65, 225, 113, 0.5);
+}
+#result input:hover{
+    background-color: rgba(223, 221, 221, 0.89);
+}
+
+#textBox
+{
+    margin:50px auto 50px auto;
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+#textBox input
+{
+    /* height: 30px; */
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.89);
+    border-radius:15px;
+    padding-left:15px;
+    padding: 7px 0px 7px 15px;
+    background-color: rgba(65, 105, 225,0.5);
+    color:white;
+    font-weight: bold;
+    font-size:30px;
+}
+#textBox input::placeholder
+{
+    color:white;
+}
+#textBox #areaResult
+{
+    margin-top:7px;
+    text-align: center;
+}
+#areaResult hr
+{
+    width:50%;
+    border:1px solid rgb(109, 108, 108);
+}
+#areaResult #resultText
+{
+    font-size:20px;
+}
