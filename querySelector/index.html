@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>querySelector</title>
+  </head>
+  <body>
+    <h2 id="shop">ショップ</h2>
+    <h3 id="nameshop"></h3>
+
+    <ul class="country_list">
+      <li>Japan</li>
+      <li>USA</li>
+      <li>France</li>
+      <li>China</li>
+      <li>Brazil</li>
+    </ul>
+    <ul>
+      <li class="city">Toky</li>
+      <li class="city">Yokohama</li>
+      <li class="city">Osaka</li>
+      <li class="city">Nagoya</li>
+      <li class="city">Kobe</li>
+    </ul>
+
+    <h3>Drink</h3>
+    <ul class="item_list">
+      <li>ミネラルウォーター</li>
+      <li>コーヒー</li>
+      <li>紅茶</li>
+      <li>ほうじ茶</li>
+    </ul>
+
+    <h3>Food</h3>
+    <ul class="item_list">
+      <li>カレー</li>
+      <li>ラーメン</li>
+      <li>焼きそば</li>
+      <li>パスタ</li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>
+          <input type="checkbox" id="check_item_all" onclick="checkAll()" />
+          <label for="check_all">全て </label>
+        </th>
+        <th>商品名</th>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="check_item" /></td>
+        <td>ミネラルウォーター</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="check_item" /></td>
+        <td>ほうじ茶</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="check_item" /></td>
+        <td>コーヒー</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="check_item" /></td>
+        <td>紅茶</td>
+      </tr>
+      <td><input type="checkbox" class="check_item" /></td>
+      <td>炭酸水</td>
+    </table>
+    <button id="message_btn" class="btn btn-primary">クリック</button>
+    <button id="remove_btn" class="btn btn-primary">イベント削除</button>
+    <script src="js/script.js"></script>
+  </body>
+</html>
