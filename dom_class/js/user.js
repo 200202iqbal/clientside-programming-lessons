@@ -62,7 +62,7 @@ for (var key in users){
     var td_name = document.createElement("td");
     var td_score = document.createElement("td");
     var td_deviationvalue = document.createElement("td");
-
+    
     var datauser = users[key];
 
     td_name.innerHTML = datauser.name;
