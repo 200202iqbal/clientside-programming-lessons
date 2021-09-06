@@ -1,0 +1,28 @@
+*
+{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+}
+header > nav
+{
+background-color: rgb(32, 32, 32);
+color:#fbfbfb;
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: stretch;
+}
+#logo{
+    border: 1px solid red;
+    align-items: center;
+    align-content: stretch;
+ul{
+    border:1px solid red;
+    list-style: none;
+    display: flex;
+}
+ul li {
+    margin : 0 1em 0 1em;
+}
